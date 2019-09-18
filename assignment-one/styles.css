@@ -4,12 +4,12 @@
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
 }
 
 header {
-  color: rgb(254, 255, 255);
-  background-color: rgb(191, 17, 17);
+  color: #feffff;
+  background-color: #bf1111;
   width: 100%;
   padding: 2vh;
   font-size: 2em;
