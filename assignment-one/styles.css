@@ -1,0 +1,71 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+header {
+  background-color: rgb(191, 17, 17);
+  width: 100%;
+  padding: 2vh;
+  font-size: 2em;
+}
+
+main {
+  float: left;
+  width: auto;
+}
+
+aside {
+  float:right;
+  margin-right: 15em;
+  width: auto;
+}
+
+main, aside {
+  padding: 6vw;
+}
+
+h2 {
+  margin-bottom: 4vh;
+  font-size: 2.5em;
+  font-family: sans-serif;
+}
+
+.pie {
+  margin-left: 4em;
+  margin-bottom: 4.5vh;
+  padding: 1em;
+  outline: dotted;
+  width: auto;
+}
+
+.pie h3 {
+  font-size: 2em;
+}
+
+.pie p {
+  font-size: 1em;
+}
+
+#toppings, ul {
+  margin-left: 3vw;
+}
+
+#toppings h3 {
+  font-size: 2em;
+}
+
+ul {
+  margin-bottom: 2vh;
+}
+
+footer {
+  margin-top: 1vh;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
