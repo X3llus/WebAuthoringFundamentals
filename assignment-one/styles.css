@@ -13,25 +13,19 @@ header {
   width: 100%;
   padding: 2vh;
   font-size: 2em;
-
 }
 
 main {
+  display: table;
+}
+
+#made, #build {
+  padding: 6vw;
   float: left;
   width: auto;
 }
 
-aside {
-  float:right;
-  margin-right: 15em;
-  width: auto;
-}
-
-main, aside {
-  padding: 6vw;
-}
-
-main ul {
+#made ul {
   list-style-type: none;
 }
 
@@ -41,18 +35,18 @@ h2 {
   font-family: sans-serif;
 }
 
-.pie {
+#made li {
   margin-bottom: 4.5vh;
   padding: 1em;
   outline: dotted;
   width: auto;
 }
 
-.pie h3 {
+#made li h3 {
   font-size: 2em;
 }
 
-.pie p {
+#made li p {
   font-size: 1em;
 }
 
@@ -60,7 +54,7 @@ h2 {
   margin-left: 3vw;
 }
 
-#toppings h3 {
+#build h3 {
   font-size: 2em;
 }
 
@@ -72,5 +66,4 @@ footer {
   margin-top: 1vh;
   text-align: center;
   width: 100%;
-  float: left;
 }
