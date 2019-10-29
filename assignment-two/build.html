@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pizza Order</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/build.css">
+  <script type="text/javascript" src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Braden's Pizzaria Online Order</h1>
+  </header>
+  <main>
+    <form method="post" action="index.html" onsubmit="buildSubmit()">
+      <fieldset>
+        <legend>Dough</legend>
+        <!-- radio input for pizza size -->
+        <p>Choose Pizza Size</p>
+        <div>
+          <p class="selection-container">
+            <input type="radio" id="sPie" class="size" name="size" value="Small" required>
+            <label for="sPie">Small Pizza $8</label>
+          </p>
+          <p class="selection-container">
+            <input type="radio" id="mPie" class="size" name="size" value="Medium">
+            <label for="mPie">Medium Pizza $10</label>
+          </p>
+          <p class="selection-container">
+            <input type="radio" id="lPie" class="size" name="size" value="Large">
+            <label for="lPie">Large Pizza $12</label>
+          </p>
+          <p class="selection-container">
+            <input type="radio" id="pPie" class="size" name="size" value="Party">
+            <label for="pPie">Party Pizza $14</label>
+          </p>
+        </div>
+        <!-- radio input for pizza crust -->
+        <p>Choose Crust</p>
+        <div>
+          <p class="selection-container">
+            <input type="radio" id="tCrust" class="crust" name="crust" value="thin" required>
+            <label for="tCrust">Thin Crust</label>
+          </p>
+          <p class="selection-container">
+            <input type="radio" id="rCrust" class="crust" name="crust" value="regular" required>
+            <label for="rCrust">Regular Crust</label>
+          </p>
+          <p class="selection-container">
+            <input type="radio" id="kCrust" class="crust" name="crust" value="keto" required>
+            <label for="kCrust">Keto Crust</label>
+          </p>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Sauce and cheese</legend>
+        <!-- drop down for sauce -->
+        <p>
+          <label for="sauce">Choose Your Sauce</label>
+          <select id="sauce" name="sauce">
+            <option value="pizza sauce">Pizza Sauce</option>
+            <option value="alfredo sauce">Alfredo Sauce</option>
+            <option value="marinara sauce">Marinara Sauce</option>
+            <option value="garlic parmesan">Garlic Parmesan</option>
+          </select>
+        </p>
+        <!-- drop down for cheese -->
+        <p>
+          <label for="cheese">Choose Your Cheese</label>
+          <select id="cheese" name="cheese">
+            <option value="shredded mozzarella">Shredded Mozzarella</option>
+            <option value="balled mozzarella">Balls of Mozzarella</option>
+            <option value="vegan mozzarella">Vegan Mozzarella</option>
+            <option value="no cheese">No Cheese</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Toppings</legend>
+        <!-- checkbox input for toppings -->
+        <div>
+          <p>Pick your toppings ($0.50 per)</p>
+          <p class="selection-container">
+            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="sausage" name="topping" value="sausage">
+            <label for="sausage">Sausage</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="gBeef" name="topping" value="ground beef">
+            <label for="gBeef">Ground Beef</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="ham" name="topping" value="ham">
+            <label for="ham">Ham</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="bacon" name="topping" value="bacon">
+            <label for="bacon">Bacon</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="chicken" name="topping" value="chicken">
+            <label for="chicken">Chicken</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="feta" name="topping" value="feta">
+            <label for="feta">Feta</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="parm" name="topping" value="parmesan">
+            <label for="parm">Parmesan</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="bOlives" name="topping" value="black olives">
+            <label for="bOlives">Black Olives</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="gOlives" name="topping" value="green olives">
+            <label for="gOlives">Green Olives</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="gPepper" name="topping" value="green pepper">
+            <label for="gPepper">Green Pepper</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="onion" name="topping" value="onion">
+            <label for="onion">Onion</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="jalapeno" name="topping" value="jalapeno">
+            <label for="jalapeno">Jalapeno</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="spinach" name="topping" value="spinach">
+            <label for="spinach">Spinach</label>
+          </p>
+          <p class="selection-container">
+            <input type="checkbox" id="basil" name="topping" value="basil">
+            <label for="basil">Basil</label>
+          </p>
+        </div>
+      </fieldset>
+      <!-- buttons for adding, reseting, and going back -->
+      <div style="text-align: center;">
+        <button type="submit" onclick="buildSubmit">Add to order</button>
+      </div>
+      <div style="text-align: center; margin-top: 10px;">
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+    </form>
+    <div style="text-align: center;">
+      <a style="text-decoration: none;" href="./index.html"><Button>Back</Button></a>
+    </div>
+  </main>
+  <footer>
+    <p>Contact us to place an order at +1 923-pizza-pi</p>
+    <p>Located at 123 Nowhere Drive, Acity, NA, L2A 3D5</p>
+  </footer>
+
+</body>
+
+</html>

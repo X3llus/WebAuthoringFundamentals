@@ -1,0 +1,39 @@
+#made ul {
+  list-style-type: none;
+}
+
+#made li {
+  margin-bottom: 4.5vh;
+  padding: 1em;
+  outline: dotted;
+  width: auto;
+  height: auto;
+}
+
+#made li label {
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#made li p {
+  font-size: 1em;
+}
+
+div {
+  align-items: center;
+  height: 40px;
+}
+
+label {
+  display: block;
+  width: auto;
+  float: left;
+  padding-right: 1em;
+}
+
+input {
+  margin-top: 25px;
+  width: 40px;
+  float: right;
+}

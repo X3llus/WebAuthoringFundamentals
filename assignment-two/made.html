@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pre-Made Pizza's</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/made.css">
+  <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Braden's Pizzaria Online Order</h1>
+  </header>
+
+  <main>
+    <form id="made" method="post" action="index.html" onsubmit="madeSubmit()">
+      <h2>Your Pre-Made Pizza's! ($11, Medium only)</h2>
+      <!-- List of premade pizzas -->
+      <ul>
+        <li>
+          <div>
+            <label for="pep">Pepperoni Pizza</label>
+            <input type="number" id="pep" name="pep" min="0" max="99" value="0">
+          </div>
+          <p>Your classic pepperoni pizza.</p>
+        </li>
+
+        <li>
+          <div>
+            <label>Margherita Pizza</label>
+            <input type="number" id="mar" name="mar" min="0" max="99" value="0">
+          </div>
+          <p>Balls of mozzarella, fresh basil, and extra virgin olive oil drizzled on top.</p>
+        </li>
+
+        <li>
+          <div>
+            <label for="che">Cheese Pizza</label>
+            <input type="number" id="che" name="che" min="0" max="99" value="0">
+          </div>
+          <p>All you need is sauce and cheese.</p>
+        </li>
+
+        <li>
+          <div>
+            <label for="can">Canadian Pizza</label>
+            <input type="number" id="can" name="can" min="0" max="99" value="0">
+          </div>
+          <p>Pepperoni, Bacon crumble, and mushrooms.</p>
+        </li>
+
+        <li>
+          <div>
+            <label for="haw">Hawaiian Pizza</label>
+            <input type="number" id="haw" name="haw" min="0" max="99" value="0">
+          </div>
+          <p>Ham and pineapple on a pizza.</p>
+        </li>
+
+        <li>
+          <div>
+            <label for="mea">Meat Lovers</label>
+            <input type="number" id="mea" name="mea" min="0" max="99" value="0">
+          </div>
+          <p>Pepperoni, Bacon, Ham, and Italian Sausage.</p>
+        </li>
+
+        <li>
+          <div>
+            <label for="veg">Veggie Pizza</label>
+            <input type="number" id="veg" name="veg" min="0" max="99" value="0">
+          </div>
+          <p>Mushrooms, Green Peppers, and Tomatoes.</p>
+        </li>
+      </ul>
+
+      <div style="text-align: center;">
+        <button type="submit" onclick="madeSubmit">Add to order/back</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>Contact us to place an order at +1 923-pizza-pi</p>
+    <p>Located at 123 Nowhere Drive, Acity, NA, L2A 3D5</p>
+  </footer>
+</body>
+
+</html>

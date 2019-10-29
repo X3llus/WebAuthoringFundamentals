@@ -1,0 +1,55 @@
+section {
+  margin: 80px;
+  padding: 20px;
+  width: 40em;
+  border-style: solid;
+  border-width: 1px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  padding: 20px;
+  margin: 80px;
+  margin-bottom: 10px;
+}
+
+li.item:hover:before {
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  position: absolute;
+  background-image: url('../media/redX.png');
+  background-size: cover;
+  transform: translateY(70%) translateX(-195%);
+}
+
+li.item:hover {
+  list-style: none;
+}
+
+li:hover ul li {
+  list-style: circle;
+}
+
+div label {
+  display: block;
+  width: 160px;
+  float: left;
+  padding-right: 1em;
+  text-align: right;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#total {
+  display: inline-block;
+  align-content: center;
+  margin-left: 380px;
+}

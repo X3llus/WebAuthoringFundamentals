@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/order.css">
+  <script type="text/javascript" src="scripts/index.js" defer></script>
+  <title>Braden's Pizzaria</title>
+</head>
+
+<body onload="makeOrder()">
+  <header>
+    <h1>Braden's Pizzaria Online Order</h1>
+  </header>
+
+  <main>
+    <!-- section for javascript to insert pizzas in order -->
+    <section>
+      <h2>Your Order</h2>
+      <ul id="pizzas">
+
+      </ul>
+    </section>
+    <!-- form for contact information -->
+    <form id="checkout" method="post">
+      <fieldset>
+        <legend>Delivery and Contact Information</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" autocomplete="name" id="name" name="name">
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" autocomplete="mobile" id="phone" name="phone">
+          <div>
+            <label for="address">Delivery Address:</label>
+            <input type="text" autocomplete="street-address" id="address" name="address">
+          </div>
+      </fieldset>
+      <div id="total">
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" onclick="placeOrder">Place Order</button>
+      </div>
+    </form>
+    <div style="text-align: center;">
+      <a style="text-decoration: none;" href="./index.html"><Button>Back</Button></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us to place an order at +1 923-pizza-pi</p>
+    <p>Located at 123 Nowhere Drive, Acity, NA, L2A 3D5</p>
+  </footer>
+</body>
+
+</html>

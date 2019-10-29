@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.selection-container {
+  display: inline-block;
+}
+
+header {
+  color: #feffff;
+  background-color: #bf1111;
+  padding: 2vh;
+  font-size: 2em;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+main {
+  display: table;
+}
+
+#made, #build {
+  padding: 6vw;
+  float: left;
+  width: auto;
+}
+
+h2 {
+  margin-bottom: 4vh;
+  font-size: 2.5em;
+  font-family: sans-serif;
+}
+
+#toppings, ul {
+  margin-left: 3vw;
+}
+
+#build h3 {
+  font-size: 2em;
+}
+
+ul {
+  margin-bottom: 2vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: #f1f1f1;
+}
